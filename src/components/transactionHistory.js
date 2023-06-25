@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import TransactionHistoryItem from './transactionHistoryItem';
 
 const TransactionHistory = ({
     items
@@ -19,13 +20,18 @@ const TransactionHistory = ({
         </thead>
 
         <tbody>
-           {items.map(item => (
-            <tr key={item.id}>
-              <td>{item.type}</td>
-              <td>{item.amount}</td>
-              <td>{item.currency}</td>
-            </tr>
-          ))} 
+          {items.map(item => {
+            // console.log(item.amount);
+           return (
+              <tr key={item.id}>
+                <TransactionHistoryItem
+                  type={item.type}
+                  amount={item.amount}
+                  currency={item.currency}
+                />
+              </tr>
+            )
+          })} 
         </tbody>
       </table>
     );
@@ -33,7 +39,7 @@ const TransactionHistory = ({
 
 TransactionHistory.propTypes = {
   type: PropTypes.string,
-  amount: PropTypes.number,
+  amount: PropTypes.string,
   currency: PropTypes.string,
   id: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.string.isRequired })),
 };
