@@ -1,6 +1,5 @@
 
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 
 import { Profile } from 'components/Profile/Profile';
 import { Statistic } from 'components/Statistics/Statistic';
