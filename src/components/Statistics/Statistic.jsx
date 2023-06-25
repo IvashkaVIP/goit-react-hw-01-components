@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Statistic.module.css';
-import { getRandomHexColor } from 'utils/getRandomHexColor.js'
+import { getRandomHexColor } from 'utils/getRandomHexColor.js';
 
 export const Statistic = ({ title, stats }) => {
   return (
@@ -21,11 +21,11 @@ export const Statistic = ({ title, stats }) => {
       </ul>
     </section>
   );
-}
+};
 
 Statistic.propTypes = {
-    title: PropTypes.string,
-    stats: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.string.isRequired })),
-  }
-
-
+  title: PropTypes.string,
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({ id: PropTypes.string.isRequired })
+  ),
+};
