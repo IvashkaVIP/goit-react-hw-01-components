@@ -1,0 +1,19 @@
+.status {
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.is-offline {
+background-color: rgb(255, 0, 0);
+}
+
+.is-online {
+  background-color: rgb(26, 255, 0);
+}
+
+.name {
+font-size: 18px;
+font-weight: 600;
+}

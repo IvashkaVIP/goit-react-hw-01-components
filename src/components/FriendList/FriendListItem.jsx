@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './FriendListItem.module.css'
 
 export const FriendListItem = ({
     avatar,
@@ -7,9 +8,13 @@ export const FriendListItem = ({
 }) => {
     return (
       <>
-        <span class="status">{isOnline}</span>
-        <img class="avatar" src={avatar} alt={name} width="48" />
-        <p class="name">{name}</p>
+        <span
+          className={`${css.status} ${
+            isOnline ? css['is-online'] : css['is-offline']
+          }`}
+        ></span>        
+        <img className={css.avatar} src={avatar} alt={name} width="48" />
+        <p className={css.name}>{name}</p>
       </>
     );
 }
