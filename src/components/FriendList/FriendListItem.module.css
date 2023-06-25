@@ -12,7 +12,11 @@ background-color: rgb(255, 0, 0);
 .is-online {
   background-color: rgb(26, 255, 0);
 }
-
+ .avatar{
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #303030;
+}
 .name {
 font-size: 18px;
 font-weight: 600;

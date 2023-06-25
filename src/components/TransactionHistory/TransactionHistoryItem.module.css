@@ -1,0 +1,10 @@
+.td-type{
+    font-size: 12px;
+    text-align: left;
+    padding: 10px 30px;
+}
+.td-amount,
+.td-currency {
+    font-size: 12px;
+    text-align: center;
+}

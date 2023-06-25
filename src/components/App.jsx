@@ -7,7 +7,7 @@ import data from '../data.json';
 import friends from '../friends.json';
 import transactions from '../transactions.json';
 
-const App = () => {
+export const App = () => {
   return (
     <>
       <Profile
@@ -16,7 +16,7 @@ const App = () => {
         location={user.location}
         avatar={user.avatar}
         stats={user.stats}
-       />
+      />
       <Statistic title="Upload stats" stats={data} />
       <FriendList friends={friends} />;
       <TransactionHistory items={transactions} />;
@@ -24,21 +24,3 @@ const App = () => {
   );
 };
 
-export default App;
-
-// export const App = () => {
-//   return (
-//     <div
-//       style={{
-//         height: '100vh',
-//         display: 'flex',
-//         justifyContent: 'center',
-//         alignItems: 'center',
-//         fontSize: 40,
-//         color: '#010101',
-//       }}
-//     >
-//       React homework template
-//     </div>
-//   );
-// };
