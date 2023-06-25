@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 import PropTypes from 'prop-types';
 import css from './Statistic.module.css';
 import { getRandomHexColor } from 'utils/getRandomHexColor.js';

@@ -1,6 +1,10 @@
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 import { Profile } from 'components/Profile/Profile';
 import { Statistic } from 'components/Statistics/Statistic';
-import {FriendList} from 'components/FriendList/FriendList';
+import { FriendList} from 'components/FriendList/FriendList';
 import { TransactionHistory } from 'components/TransactionHistory/TransactionHistory';
 import user from '../user.json';
 import data from '../data.json';

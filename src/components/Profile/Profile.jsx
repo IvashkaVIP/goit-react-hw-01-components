@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 import PropTypes from 'prop-types';
 import css from 'components/Profile/Profile.module.css';
 
