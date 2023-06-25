@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const FriendListItem = ({
+export const FriendListItem = ({
     avatar,
     name,
     isOnline,
@@ -20,5 +20,5 @@ FriendListItem.propTypes = {
   isOnline: PropTypes.bool,
 };
 
-export default FriendListItem;
+
 

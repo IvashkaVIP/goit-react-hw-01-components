@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import TransactionHistoryItem from './TransactionHistoryItem';
+import { TransactionHistoryItem } from './TransactionHistoryItem';
 
-const TransactionHistory = ({
+export const TransactionHistory = ({
   items,
   // id,
   // type,
@@ -43,4 +43,4 @@ TransactionHistory.propTypes = {
   id: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.string.isRequired })),
 };
 
-export default TransactionHistory;
+

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Profile = ({
+export const Profile = ({
     username,
     tag,
     location,
@@ -46,4 +46,3 @@ Profile.propTypes = {
   likes: PropTypes.number,
 };
 
-export default Profile;
