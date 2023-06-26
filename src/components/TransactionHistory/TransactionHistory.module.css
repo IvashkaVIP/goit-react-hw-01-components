@@ -24,3 +24,13 @@
 .tr:nth-child(even) {
   background-color: rgb(207, 207, 207);
 }
+.td-type {
+  font-size: 12px;
+  text-align: left;
+  padding: 10px 30px;
+}
+.td-amount,
+.td-currency {
+  font-size: 12px;
+  text-align: center;
+}
